@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Definindo a codificação de caracteres para o HTML (UTF-8) -->
+    <meta charset="UTF-8">
+    
+    <!-- Configuração de responsividade para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Supernatual</title>
+
+    <!-- Ícone da página (favicon) que aparece na aba do navegador -->
+    <link rel="shortcut icon" type="image/png" href="img/supernatural2.png"/>
+
+    <!-- Importação do CSS do Bootstrap (para utilizar o framework de estilo) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        html,body{
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+        }
+        main{
+          flex: 1;
+        }
+        footer{
+          width: 100%;
+        }
+    </style>
+  </head>
+
+  <body class="bg-black-subtle"> <!-- Definindo o fundo do corpo da página com a classe do Bootstrap para cor de fundo sutil (amarela clara) -->
+    
+    <!-- Cabeçalho com a barra de navegação -->
+    <header>
+      <nav class="navbar navbar-expand-lg text-bg-dark p-3"> <!-- Barra de navegação com fundo vermelho e texto em branco -->
+        <div class="container-fluid"> <!-- Container fluido para tornar o layout responsivo -->
+          
+          <!-- Logo ou nome do site, com a classe 'text-warning' para texto amarelo -->
+          <a class="navbar-brand text-warning" href="index.html">
+            <img src="img/supernatural.png" alt="supernatural" width="30" height="24">
+            Supernatural</a>
+          
+          <!-- Botão que aparece em telas pequenas (mobile) para expandir o menu -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> <!-- Ícone do botão de menu -->
+          </button>
+          
+          <!-- Menu de navegação que se expande ou colapsa dependendo do tamanho da tela -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <!-- Itens do menu -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <!-- Item do menu: "Produtos" -->
+              <li class="nav-item p-1">
+                <a type="button" class="btn btn-outline-warning" href="/pages/produtos.html">Produtos</a>
+              </li>
+              
+              <!-- Item do menu: "Mais" com um sub-menu (dropdown) -->
+              <li class="nav-item dropdown p-1">
+                <a class="nav-link dropdown-toggle btn btn-outline-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Mais
+                </a>
+                <!-- Submenu (itens do dropdown) -->
+                <ul class="dropdown-menu btn btn-outline-warning">
+                  <li><a class="dropdown-item" href="/pages/contatos.html">Contatos</a></li>
+                  <li><hr class="dropdown-divider"></li> <!-- Separador de itens no dropdown -->
+                  <li><a class="dropdown-item" href="#">Em breve</a></li>
+                  <li><a class="dropdown-item" href="#">Em breve</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+            <!-- Formulário de busca -->
+            <form class="d-flex" role="search">
+              <!-- Campo de entrada de texto para pesquisa -->
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="search">
+              <!-- Botão de busca -->
+              <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Corpo principal da página (atualmente vazio) -->
+    <main>
+    </main>
+
+    <!-- Rodapé (atualmente vazio) -->
+    <footer class="text-center p-3" style="background-color: #000000; color: white; border-top: 4px solid #D00000;">
+      <div>
+        <p class="p-3 y-0 text-center container-fluid">&copy; Martins 2025</p>
+      </div>
+    </footer>
+
+    <!-- Importação do JS do Bootstrap e suas dependências (para ativar interatividade, como o menu dropdown e o botão de alternância) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
